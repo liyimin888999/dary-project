@@ -1,0 +1,34 @@
+git代码托管平台
+	https://github.com/
+	https://dev.tencent.com/
+	https://gitee.com/
+
+新建线上仓库
+	new respository
+	填写 respository name
+	选择public
+	得到一个线上地址
+
+到本地代码的位置
+	鼠标右键打开git bash here
+	执行 git init
+	配置用户名和邮箱
+		git config --global user.name "XDLRanger"
+		git config --global user.email "18081003141@163.com"
+	
+	通过三步操作将本地代码推送到线上
+		1、 git add .  
+		 	将所有文件添加到缓存区
+		2、 git commit -m "本次提交所做的修改"  
+		 	将代码提交到本地仓库
+		3、  git remote add origin https://github.com/XDLRanger/dary-project.git
+			将本地仓库跟线上仓库进行关联
+		4、  git push origin master
+			将本地仓库推送到线上（可能需要多次输入用户名密码）
+		5、 修改之后可以使用 git status查看状态
+		6、 修改之后再执行
+					git add .  
+					git commit -m "本次提交所做的修改"  
+					git push origin master
+		7、 git clone git地址
+		    把线上的仓库克隆到本地
